@@ -1,0 +1,491 @@
+/* header  */
+*{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    white-space: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(146, 5, 5);
+}
+.header-content nav{
+    width: 70%;
+}
+.im{
+    width: 30%;
+}
+.header-content nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-right: 20%;
+}
+
+.header-content nav ul li a:link, .header-content nav ul li a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    transition: opacity, hover 0.15s;
+    overflow: hidden;
+}
+
+.header-content nav ul li a:link:hover, .header-content nav ul li a:visited:hover{
+    background-color: white;
+    color: rgb(146, 5, 5);
+    border-radius: 4px;
+}
+.header-content nav ul li a:link:active, .header-content nav ul li a:visited:active{
+    opacity: 0.4;
+}
+
+.fenty-logo{
+    width: 30%;
+    padding-left: 7rem;
+}
+
+.marq{
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+}
+
+/* section one for home page */
+
+.one{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.one h1{
+    text-align: center;
+}
+.one p{
+    text-align: center;
+    font-weight: 0.15rem;
+    font-family: sans-serif;
+    line-height: 3rem;
+    font-size: 22px;
+}
+.one button{
+    text-align: center;
+    background-color: rgb(146, 5, 5);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: solid, 1px;
+    border-radius: 1rem;
+}
+.one button a:link, .one button a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+.one button a:link:hover, .one button a:visited:hover{
+    color: rgb(146, 5, 5);
+}
+.one button:hover{
+    background-color: rgb(253, 253, 253);
+    color: rgb(146, 5, 5);
+}
+
+/* section two for home page */
+
+.tw0{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.two img{
+    width: 25%;
+    border-radius: 12px;
+}
+.par{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(146, 5, 5);
+    padding-bottom: 70px;
+    padding-right: 28px;
+}
+.two h2{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: underline;
+    color: white;
+}
+.two p{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 10px;
+    line-height: 23px;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+    
+}
+
+/* section three for home page*/
+
+.prods{
+    width: 24rem;
+}
+
+.three h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid, rgb(146, 5, 5) 4px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.7%;
+}
+
+@keyframes prods {
+  0% {
+    transform: translateX(0); /* Starting position */
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(50px); /* Mid-point transformation */
+    opacity: 0.8;
+  }
+  75% {
+    transform: translate(70px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0); /* Ending position */
+    opacity: 1;
+  }
+}
+
+.three div img {
+  animation-name: prods; /* Link to your @keyframes */
+  animation-duration: 4s; /* How long the animation takes */
+  animation-iteration-count: infinite; /* How many times it repeats (or a number) */
+  animation-direction: alternate; /* Play forwards and then backwards */
+  animation-timing-function: ease-in-out; /* Speed curve of the animation */
+  animation-delay: 1s; /* Delay before the animation starts */
+  animation-fill-mode: forwards; /* What happens after the animation finishes */
+}
+
+/* section 4 for home page */
+
+.four{
+    background-color: rgb(146, 5, 5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.four div{
+    border: solid white 0.8px;
+    margin: 4px;
+    row-gap: 4px;
+}
+
+.four div h3{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+.four div p{
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+footer p{
+    text-align: center;
+    line-height: 25px;
+
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer div a img{
+    width: 15%;
+    padding-left: 200px;
+}
+
+.grid-products-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    row-gap: 8px;
+
+}
+.in-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.in-grid div{
+    width: 15rem;
+}
+
+.in-grid div button{
+    background-color: rgb(146, 5, 5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    transition: opacity 0.15s;
+}
+
+.in-grid div button:hover{
+    background-color: white;
+    color: rgb(146, 5, 5);
+}
+
+.in-grid div button:active{
+    opacity: 0.4;
+}
+
+.in-grid div p{
+    text-align: left; 
+}
+
+.in-grid img{
+    width: 25%;
+}
+
+.leadership-children{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bot{
+    text-decoration: underline;
+}
+.leadership-children div{
+    border: solid, 1px, white;
+    border-radius: 6px;
+}
+.leadership-children div p{
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.trustees-three h1{
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    color: white;
+    
+}
+.trustees-three{
+    background-color: rgb(146, 5, 5);
+    padding-bottom: 15px;
+}
+.submit-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0;
+}
+.submit-form p{
+    vertical-align: bottom;
+    line-height: 2rem;
+    color: white;
+    padding-bottom: 0;
+    padding-top: 18px;
+}
+.submit-form div input{
+    height: 1.6rem;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    padding: 2px;
+}
+.submit-form div textarea{
+    
+}
+.submit-form div button{
+    background-color: rgb(146, 5, 5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+}
+.submit-form div button:hover{
+    color: rgb(146, 5, 5);
+    background-color: white;
+}
+.submit-form div select{
+    height: 1.6rem;
+    padding: 0.6rem 0.6rem o.6rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+}
+.form{
+    background-color: rgb(146, 5, 5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#ta{
+    height: 4rem;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.int-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.int-pp {
+    padding-top: 17px;
+    color: white;
+}
+
+.contact, h2, h3, p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px;
+}
+
+.ta-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.events p{
+    color: white;
+}
+
+.events button{
+    background-color: rgb(146, 5, 5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+    margin-top: 10px;
+    border: white, 2px, solid;
+}
+
+.events button:hover{
+    background-color: white;
+    color: rgb(146, 5, 5);
+}
+
+.body{
+    background-color: rgb(146, 5, 5);
+}
+
+@media (max-width: 460px) {
+    *{
+        margin: 0;
+    }
+    .header-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-content nav ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .product-grid{
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+    }
+
+    .two par{
+        margin-right: 50px;
+    }
+
+    .two img{
+        display: none;
+    }
+    .par{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    header div nav ul li{
+        flex-direction: column;
+    }
+    .product-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two img{
+        display: none;
+    }
+    .par{
+        margin-left: 90px;
+    }
+
+}
